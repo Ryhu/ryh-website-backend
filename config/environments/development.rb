@@ -11,7 +11,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_options = {from: Rails.application.credentials.dig(:EMAIL_USERNAME)}
   config.action_mailer.smtp_settings = {
-  address:              'smtp.gmail.com',
+  address:              'smtp.sendgrid.net',
   port:                 587,
   user_name:            Rails.application.credentials.dig(:EMAIL_USERNAME),
   password:             Rails.application.credentials.dig(:EMAIL_PASSWORD),
